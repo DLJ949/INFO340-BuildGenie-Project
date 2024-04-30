@@ -1,0 +1,515 @@
+* {
+  box-sizing: border-box;
+}
+
+main {
+  font-family: 'inter', sans-serif;
+}
+.coloring-header{
+  color: #FF9A00;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.header-text {
+  font-weight: 800;
+  text-align: center;
+}
+
+.homepage-subtext {
+  text-align: center;
+  font-weight: 500;
+
+}
+
+.homepage-btn {
+text-align: center;
+padding: 1rem;
+}
+
+button.homepage-btn-style {
+  padding: 1rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+  border-radius: 32px;
+  background: linear-gradient(110deg, rgb(252, 252, 252, .32) 0%, rgb(153, 153, 153, .32) 100%);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+   backdrop-filter: blur(28px);
+  border: transparent;
+}
+
+.colored-btn-text {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: radial-gradient(274.12% 170.61% at -14.97% -4.79%, rgba(217, 43, 162, 0.15) 0%, rgba(0, 102, 204, 0.50) 49.56%, rgba(217, 43, 162, 0.15) 100%), black;
+    color: white;
+}
+
+/* Nav */
+nav {
+    width: 100%;
+    height: 137px;
+    background: rgba(13, 1, 6, 0.30);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.links-long {
+  display: none;
+  margin-right: 30px;
+}
+
+.links-short {
+  display: flex;
+  margin-right: 30px;
+}
+
+nav a {
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 30px;
+  color: rgba(255, 255, 255, .70);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+nav a:hover,
+nav a:focus,
+nav a:active {
+  text-shadow: #FF9A00;
+  color: #FF9A00;
+  border-bottom: 0.1rem solid #FF9A00;
+  transition: ease-out 0.5s;
+}
+
+nav a h1 {
+  color: rgb(255, 255, 255);
+}
+
+.bigTitle {
+  display: none;
+}
+
+nav a:hover {
+  color: white;
+}
+
+nav a > img {
+  margin-right: 4px;
+}
+
+.colored-title {
+  color: #FF9A00;
+}
+
+/* Search Page */
+.search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-input {
+    height: 36px;
+    border: solid transparent;
+    outline: none;
+    color: black;
+    background-color: white;
+    font-size: 20px;
+    font-weight: medium;
+    margin-left: 25px;
+}
+
+
+.search-bar {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width: 90%;
+    height: 64px;
+    border-radius: 16px;
+    opacity: 0.32;
+    background-color: white;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.results-box {
+    background: rgba(255, 255, 255, 0.90);
+    width: 100%;
+    height: 1440px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.filter-result-box {
+  width: 100%;
+  margin-left: 8px;
+  margin-right: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
+  align-items: center;
+}
+
+.results-box > p{
+    color: black;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    margin-top: 16px;
+}
+
+.results:nth-child(2) {
+  display: flex;
+  width: 100%;
+}
+
+.filter-results {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.filter-header {
+  height: 45px;
+  border-radius: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  background: #FFF;
+}
+.filter-header h2 {
+  color: black;
+  font-weight: 600;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.sort-header {
+  color: black;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.results {
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  background: rgba(255, 255, 255, 0.50);
+  margin-left: 34px;
+  margin-right: 18px;
+  justify-content: center;
+  color: black;
+}
+
+.results p {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+/* Build.HTML */
+#build-header {
+  padding-top: 10px;
+  padding-bottom: 2px;
+  margin-bottom: 50px;
+  text-align: center;
+  background-color: #3b426e;
+}
+
+.product img {
+  width: 65px;
+}
+
+/* Custom colored URL link */
+.PCParts a {
+  color: #FF9A00;
+}
+
+/* Custom already-visited colored URL link */
+.PCParts a:visited {
+  color: #25c3c6;
+}
+
+/* Different, constant color for ADD COMPONENT links */
+.item .Title a {
+  color: whitesmoke;
+}
+
+.item .Title {
+  font-weight: bold;
+}
+
+/* ADD COMPONENT button */
+.Title a {
+  text-decoration: none;
+  background-color: #0058dc;
+  border: none;
+  padding: 6px;
+  font-size: 18px;
+  border-radius: 4px;
+  transition-duration: 0.2s;
+}
+
+.Title a b {
+  font-family: 'Work Sans', sans-serif;
+}
+
+.Title a:hover {
+  background-color: #0065FF; /* Complementary Color to #FF9A00 */
+}
+
+/* Custom Button (Not using Bootstrap for Build.HTML) */
+.Remove button{
+  background-color: #f44336;
+  border: none;
+  width: 38px;
+  height: 35px;
+  font-size: 18px;
+  border-radius: 4px;
+  transition-duration: 0.4s;
+}
+
+.Remove button:hover {
+  background-color: #de392d;
+}
+
+/* table */
+.PCParts {
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin-left: 3%;
+  width: 94%;
+  height: 50px;
+  table-layout: fixed;
+}
+
+/* Adding spacing for the bottom of the page. */
+.PCParts.main {
+  margin-bottom: 75px;
+}
+
+.item {
+  text-align: center;
+  border: 1px solid black;
+}
+
+/* Could not figure out how to have background color connect GRAND TOTAL to COST... */
+.item-footer {
+  background-color: black;
+  height: 45px;
+}
+
+.item-footer .component {
+  padding-left: 20px;
+}
+
+.footer-top {
+  background-color: #2e3356;
+  border: 1px solid #1e2138;
+  width: 100%;
+  padding: 15px;
+  padding-left: 70px;
+}
+
+/* Save your build button */
+.footer-top button {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  background-color: #FF9A00;
+  box-shadow: 2px 2px 5px #d78100;
+  border: none;
+  padding: 5px;
+  font-size: 18px;
+  border-radius: 4px;
+  transition-duration: 0.4s;
+}
+
+.footer-top button:hover {
+  background-color: #e58900;
+}
+
+.footer-main {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.footer-container {
+  background-color: #1e2138;
+}
+
+.footer-main h3 {
+  font-size: 3rem;
+  padding-left: 40px;
+}
+
+.footer-main {
+  gap: 40px;
+  align-items: center;
+}
+
+.footer-main p {
+  font-size: 20px;
+  font-style: italic;
+}
+
+.footer-main a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-bottom {
+  background-color: #1a1c2f;
+  padding: 10px 15px;
+}
+
+/* wip*/
+.comparison-tables {
+  display: flex;
+  justify-content: space-around;
+}
+
+.build-table {
+  width: 45%;
+  border: 1px solid #000000;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.build-table h2 {
+  text-align: center;
+}
+
+.build-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.build-table table th,
+.build-table table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+.build-table table th {
+  background-color: #f2f2f2;
+}
+
+/* on default we hide component info and just display all builds*/
+.component-info {
+  display: none;
+}
+
+/* when any build is checkmarked, we display the parts.
+should work for both tables once we implement functionality */
+#yourBuild:checked ~ .component-info.yourBuild,
+#comparisonBuild:checked ~ .component-info.comparisonBuild {
+  display: block;
+}
+
+@media (min-width: 598px) {
+  .search-bar {
+    width: 582px;
+  }
+
+  .results:nth-child(2) {
+    width: 582px;
+  }
+}
+
+@media (min-width: 768px) {
+  .search-bar {
+    width: 752px;
+  }
+
+  .results:nth-child(2) {
+    width: 752px;
+  }
+  
+  .filter-results {
+    width: 752px;
+  }
+
+  .filter-result-box {
+    width: 752px;
+  }
+}
+
+
+@media (min-width: 992px) {
+  .bigTitle {
+    display: block;
+  }
+
+  .smallTitle{
+    display: none;
+  }
+  
+  .search-bar {
+    width: 976px;
+  }
+
+  .results:nth-child(2) {
+    width: 976px;
+  }
+  
+  .filter-results {
+    width: 976px;
+  }
+
+  .links-short {
+    display: none;
+  }
+
+  .links-long {
+    display: flex;
+  }
+
+  .filter-result-box {
+    width: 976px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .results:nth-child(2) {
+    width: 1200px;
+  }
+  
+  .filter-results {
+    width: 1200px;
+  }
+  
+  .filter-result-box {
+    width: 1200px;
+  }
+}
+
+@media (max-width: 598px) {
+  #build-header > h1 {
+    font-size: 1.5em;
+  }
+
+  .build-table h2 {
+    font-size: 1.25em;
+  }
+
+  .build-table label {
+    font-size: 0.85em;
+  }
+}
